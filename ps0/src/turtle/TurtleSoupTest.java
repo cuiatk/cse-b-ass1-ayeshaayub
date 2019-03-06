@@ -15,6 +15,7 @@ public class TurtleSoupTest {
     /**
      * Tests that assertions are enabled.
      */
+
     @Test(expected=AssertionError.class)
     public void testAssertionsEnabled() {
         assert false;
@@ -58,8 +59,7 @@ public class TurtleSoupTest {
     public void calculateHeadingsTest() {
         List<Integer> xpoints = new ArrayList<>();
         List<Integer> ypoints = new ArrayList<>();
-        xpoints.add(0);
-        xpoints.add(1);
+        xpoints.add(0);        xpoints.add(1);
         xpoints.add(1);
         ypoints.add(0);
         ypoints.add(1);
@@ -71,3 +71,4 @@ public class TurtleSoupTest {
         assertEquals(315.0, result.get(1), 0.001);
     }
 }
+
